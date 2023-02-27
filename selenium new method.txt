@@ -1,0 +1,11 @@
+			selenium new method
+
+import time
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+driver = webdriver.Chrome("chromedriver.exe")
+driver.get("https://youtube.com")
+time.sleep(3)
+driver.find_element(By.XPATH,'//*[@id="search"]').send_keys("hindi songs")
